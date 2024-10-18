@@ -39,9 +39,9 @@ console.log(`Присваивание с делением: ${num}`); // Прис
 let count = 10;
 let newCount = 0;
 console.log(`count: ${count}; newCount: ${newCount}`);
-// newCount = count++;
+newCount = count++;
 // newCount = count--;
-// newCount = ++count;
-newCount = --count;
+//newCount = ++count;
+// newCount = --count;
 console.log(`count: ${count}; newCount: ${newCount}`);
 
