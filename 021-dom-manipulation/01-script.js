@@ -1,5 +1,6 @@
 function btnClick() {
     // Изменяем текст в контейнере
+    // innerHTM - тогда текст воспринимается с форматированием
     textContainer.innerHTML = "<b><u>Новый текст</u></b>";
 }
 
@@ -10,3 +11,4 @@ const textContainer = document.getElementById("textContainer");
 
 // Добавляем обработчик события клика на кнопку
 changeTextBtn.addEventListener("click", btnClick);
+

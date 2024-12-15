@@ -19,3 +19,21 @@ do {
 
 // for..in
 // for..of
+for (const key in object) {
+    if (Object.prototype.hasOwnProperty.call(object, key)) {
+        const element = object[key];
+
+    }
+};
+
+
+//разбор строки на символы
+let str = "Hello ept";
+for (let index = 0; index < str.length; index++) {
+    const element = str[index];
+    console.log(`${element}`)
+};
+
+for (const el of str) {
+    console.log(`${e}`)
+};

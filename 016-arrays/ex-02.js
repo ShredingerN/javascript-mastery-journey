@@ -16,6 +16,14 @@ for (let i = 0; i < array.length; i++) {
 }
 
 console.log(strOut);
-
-
 console.log(sum);
+
+const arr1 = [];
+for (let i = 0; i < 5; i++) {
+    //random заполняет от 0 до 1, умножаем на 10
+    //и отсекаем дробную часть, чтобы получить целые числа.
+    const el = Math.floor(Math.random() * 10);
+    arr1.push(el);
+
+}
+console.log(`мой массив ${arr1}`)
