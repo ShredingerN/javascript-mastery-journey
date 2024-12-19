@@ -1,21 +1,18 @@
-let billAmount = Number.parseFloat(prompt("Сумма счёта"));
-let tipPercentage = parseFloat(prompt("Процент чаевых"));
-let numberOfPeople = Number.parseInt(prompt("Сколько человек участвовало в обеде"));
+let person = Number.parseFloat(prompt("Сколько человек пришло: "));
+let bill = Number.parseFloat(prompt("Сумма счета: "));
+let tips = Number.parseFloat(prompt("Какой процент чаевых от суммы счета?"));
+const coeff = 0.01;
 
-if (isNaN(billAmount)
-    || isNaN(tipPercentage)
-    || isNaN(numberOfPeople)
-    || billAmount <= 0
-    || tipPercentage < 0
-    || numberOfPeople <= 0
-) {
-    alert("Ошибка ввода данных");
+if (isNaN(person) 
+    || isNaN(bill) 
+    || isNaN(tips) 
+    || person <= 0 
+    || bill <= 0 
+    || tips < 0) {
+    alert("Пожалуйста, введите корректные числовые значения (неотрицательные) для количества людей, суммы счета и процента чаевых.");
 } else {
-    let tipAmount = 1000 * tipPercentage / 100;
-    let totalAmount = billAmount + tipAmount;
-    let perPersonAmount = totalAmount / numberOfPeople;
+    let billWithTips = bill + (bill * tips * 0.01);
+    let billPerPerson = billWithTips / person;
 
-    alert("Общий счёт: " + totalAmount);
-    alert("Процент чаевых: " + String(tipPercentage) + "%");
-    alert(`С каждого: ${perPersonAmount}`);
+    alert(`Счет за человека с учетом чаевых: ${billPerPerson.toFixed(2)}`);
 }

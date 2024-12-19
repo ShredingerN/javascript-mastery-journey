@@ -12,7 +12,7 @@ let dateComponents = new Date(2024, 2, 10, 14, 30, 0);
 console.log(dateComponents);
 
 // Создание объекта Date из миллисекунд с начала эпохи Unix
-let dateFromMs = new Date(0); // Эпоха Unix
+let dateFromMs = new Date(1734350219000); // Эпоха Unix
 console.log(dateFromMs);
 
 // Получение года текущей даты
